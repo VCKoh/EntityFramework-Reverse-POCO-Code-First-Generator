@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework.Reverse.POCO.Generator", "EntityFramework.Reverse.POCO.Generator\EntityFramework.Reverse.POCO.Generator.csproj", "{FA93A0BD-8B45-43BA-9C57-1D8FD63CAEAE}"
 EndProject
@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Reverse.POCO.Generator", "EntityFrameworkCore.Reverse.POCO.Generator\EntityFrameworkCore.Reverse.POCO.Generator.csproj", "{BCF89D23-755E-4885-80F8-C965FAA2E133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +74,18 @@ Global
 		{14C1FD62-34DB-49B9-B35A-B363398D0914}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{14C1FD62-34DB-49B9-B35A-B363398D0914}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{14C1FD62-34DB-49B9-B35A-B363398D0914}.Release|x86.ActiveCfg = Release|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Debug|x86.Build.0 = Debug|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Release|x86.ActiveCfg = Release|Any CPU
+		{BCF89D23-755E-4885-80F8-C965FAA2E133}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
