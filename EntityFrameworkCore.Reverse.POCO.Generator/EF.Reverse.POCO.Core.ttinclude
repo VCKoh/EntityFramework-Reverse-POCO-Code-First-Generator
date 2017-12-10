@@ -936,8 +936,8 @@
             {
                 if(Settings.UseDataAnnotationsSchema)
                     DataAnnotations.Add("DatabaseGenerated(DatabaseGeneratedOption.Computed)");
-                else
-                    databaseGeneratedOption = string.Format(".ValueGeneratedOnAddOrUpdate()");
+                // else
+                    // databaseGeneratedOption = string.Format(".ValueGeneratedOnAddOrUpdate()");
             }
             else if (IsPrimaryKey)
             {
@@ -952,7 +952,11 @@
             if(Settings.UseDataAnnotationsSchema || (IsPrimaryKey && Settings.UseDataAnnotations))
                 DataAnnotations.Add(string.Format("Column(@\"{0}\", Order = {1}, TypeName = \"{2}\")", Name, Ordinal, SqlPropertyType));
             else
-                sb.AppendFormat(".HasColumnName(@\"{0}\").HasColumnType(\"{1}\")", Name, SqlPropertyType);
+			{
+                // sb.AppendFormat(".HasColumnName(@\"{0}\").HasColumnType(\"{1}\")", Name, SqlPropertyType);
+				if (SqlPropertyType == "datetime")
+					sb.AppendFormat(".HasColumnType(\"{0}\")", SqlPropertyType);
+			}
 
             if (Settings.UseDataAnnotationsSchema && Indexes.Any())
             {
@@ -1009,7 +1013,10 @@
                     if (doNotSpecifySize)
                         sb.Append(".HasMaxLength(null)");
                     else
-                        sb.AppendFormat(".HasMaxLength({0})", MaxLength);
+					{
+						if (!IsRowVersion)
+							sb.AppendFormat(".HasMaxLength({0})", MaxLength);
+					}
                 }
             }
 
