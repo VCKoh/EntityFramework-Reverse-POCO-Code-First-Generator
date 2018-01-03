@@ -3282,7 +3282,8 @@ SELECT  SERVERPROPERTY('Edition') AS Edition,
             switch(sqlType)
             {
                 case "hierarchyid":
-                    sysType = "System.Data.Entity.Hierarchy.HierarchyId";
+                    // sysType = "System.Data.Entity.Hierarchy.HierarchyId";
+                    sysType = "byte[]";
                     break;
                 case "bigint":
                     sysType = "long";
